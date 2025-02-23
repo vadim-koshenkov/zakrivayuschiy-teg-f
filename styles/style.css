@@ -84,14 +84,10 @@
   color: currentColor;
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  text-shadow:
-  -1px 0 #fff, 
-  0 1px #fff, 
-  1px 0 #fff, 
-  0 -1px #fff;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
-@supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .card__container-picture-label {
     -webkit-text-stroke: 1px #fff;
     text-stroke: 1px #fff;
@@ -228,7 +224,7 @@ button:focus {
 }
 
 .button::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   inset: 0;
