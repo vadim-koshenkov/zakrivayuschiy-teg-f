@@ -57,9 +57,19 @@
 
 .card__container-picture {
   inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
   aspect-ratio: 1 / 1;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+}
+
+.card:nth-child(4) .card__container-picture {
+  object-position: bottom;
+}
+
+.card:nth-child(8) .card__container-picture {
+  object-position: right;
 }
 
 .card__container-picture-label {
@@ -118,15 +128,12 @@
   mix-blend-mode: difference;
 }
 
-p:not(:first-child) {
-  text-shadow: 1px 1px rgba(32, 32, 31, 0.74);
-}
-
 .card__icon-button {
   background-color: transparent;
   border: 2px solid transparent;
   inline-size: 38px;
   block-size: 38px;
+  transition: border 0.3s ease;
 }
 
 .card__like-button {
@@ -230,7 +237,6 @@ button:focus {
 
 .card__icon-button:focus-visible {
   border: 2px solid #000;
-  transition: border 0.3s ease;
 }
 
 .filter-grayscale {
