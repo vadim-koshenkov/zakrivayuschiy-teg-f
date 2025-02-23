@@ -207,6 +207,11 @@
     padding: 15px 20px;
   }
 
+  .save-button-floppy {
+    inline-size: 29px;
+    block-size: 29px;
+  }
+
   .dialog[open] {
     padding: 30px 40px;
   }
