@@ -172,6 +172,7 @@
   font-family: var(--accent-font);
   font-weight: var(--reggular-font-weight);
   font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
 }
 
